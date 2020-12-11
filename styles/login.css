@@ -1,0 +1,161 @@
+@font-face {
+	font-family: "changa";
+	src: url(./Changa-Bold.ttf);
+}
+@font-face {
+	font-family: "krona";
+	src: url(./KronaOne-Regular.ttf);
+}
+*{margin: 0;padding: 0;}
+#app{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	position: relative;
+	z-index: 1;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.background{
+	position: fixed;
+	z-index: 0;
+	width: 90%;
+	height: 90%;
+	top: auto;
+	left: auto;
+}
+.header{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 56px;
+	display: flex;
+	flex-direction: row;
+}
+.logo{
+	position: relative;
+	z-index: 2;
+	color: #e74c3c;
+	font-family: 'Changa';
+	display: flex;
+	flex-grow: 10;
+}
+.create{
+	border: none;
+	font-size: 14px;
+	font-family: "krona", sans-serif;
+	background-color: #e74c3c;
+	color: #ffffff;
+	position: relative;
+	z-index: 2;
+	width: fit-content;
+	height: fit-content;
+	padding: 8px;
+	align-self: center;
+	cursor: pointer;
+	border-radius: 8px;
+	outline: none;
+}
+.create:hover{
+	background-color: #f04e3c;
+}
+.backgroundHeader{
+	background-color: #ffffff;
+	opacity: .8;
+	position: absolute;
+	width: 100%;
+	height: 56px;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.connectionSection
+{
+	width: auto;
+	position: relative;
+	z-index: 2;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	justify-self: center;
+}
+.loginForm{
+	width: auto;
+	position: relative;
+	z-index: 2;
+	height: fit-content;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.loginForm h3{
+	position: relative;
+	z-index: 2;
+	font-family: "krona";
+	color: #1abc9c;
+	margin: 8px;
+}
+.backgroundForm{
+	background-color: #ecf0f1;
+	opacity: 0.9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+}
+.field{
+	position: relative;
+	z-index: 2;
+	font-family: "krona";
+	border-radius: 8px;
+	font-size: 16px;
+	width: 256px;
+	height: 24px;
+	border: none;
+	text-indent: 6px;
+	margin: 8px;
+	outline-color: #1abc9c;
+}
+.connect{
+	position: relative;
+	z-index: 2;
+	color: #ffffff;
+	font-family: "krona";
+	font-size: 16px;
+	width: auto;
+	margin: 8px;
+	height: fit-content;
+	padding: 8px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: #1abc9c;
+}
+.connect:hover{
+	background-color: #16a085;
+}
+.footSign{
+	position: absolute;
+	width: 90%;
+	height: 64px;
+	bottom: 0;
+	margin-left: 5%;
+	color: #000000;
+	font-family: "krona";
+	font-size: 11px;
+	text-align: right;
+}
+  

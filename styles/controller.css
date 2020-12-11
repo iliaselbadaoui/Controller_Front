@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "changa";
+	src: url(./Changa-Bold.ttf);
+}
+@font-face {
+	font-family: "krona";
+	src: url(./KronaOne-Regular.ttf);
+}
+*{margin: 0;padding: 0;}
+#app{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+}
+.header{
+	width: -webkit-calc(100% - 128px);
+	margin: auto;
+	height: 56px;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+.logo{
+	color: #e74c3c;
+	font-family: 'Changa';
+	display: flex;
+	flex-grow: 2;
+}
+.employees{
+	width: -webkit-calc(100% - 128px);
+	margin: auto;;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 11;
+}
+.Add_N_Search{
+	margin-top: 16px;
+	display: flex;
+	height: 34px;
+}
+.search{
+	width: 384px !important;
+	display: inline-flex;
+	margin: auto;
+}
+.add_employee{
+	padding: 8px !important;
+	display: inline-flex;
+}
+.data_container{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+.employee_message{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.width_256{
+	width: 256px !important;
+}

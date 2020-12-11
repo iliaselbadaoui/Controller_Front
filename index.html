@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src * 'unsafe-inline';script-src * 'unsafe-inline'; img-src 'self' data:;connect-src * data:">
+      <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; style-src * 'unsafe-inline';script-src * 'unsafe-inline'; img-src 'self' data:;connect-src * data:">
+    <link rel="stylesheet" type="text/css" href="./styles/login.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/compo.css"/>
+    <script src="./js/fa.js"></script>
+    <script src="./js/bridge.js"></script>
+    <title>Controller</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id = "content" class="content">
+        <img src="./images/login.svg" class="background">
+        <div class="header">
+          <h1 class="logo">Controller</h1>
+          <button id="create" class="create">Nouveau</button>
+          <div class="backgroundHeader"></div>
+        </div>
+
+        <div class="connectionSection">
+          <div class="loginForm">
+            <h3>Connexion</h3>
+            <input class="field" type="text" placeholder="Identifiant" id="uname"/>
+            <input class="field" type="password" placeholder="mot de passe" id="passwd"/>
+            <button id="loginButton" class="connect">Connecter</button>
+            <div class="backgroundForm"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footSign" id="footSign"></div>
+    </div>
+    <script src="./renderer.js"></script>
+    <script src="./js/checkFirstRun.js"></script>
+  </body>
+</html>

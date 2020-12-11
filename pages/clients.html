@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src * 'unsafe-inline';script-src *; img-src 'self' data:;connect-src * data:">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; style-src * 'unsafe-inline';script-src *; img-src 'self' data:;connect-src * data:">
+    <link rel="stylesheet" type="text/css" href="../styles/controller.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/compo.css"/>
+    <script src="../js/fa.js"></script>
+    
+	<script src="../js/checkFirstRun.js"></script>
+	<script src="../js/bridge.js"></script>
+    <title>Controller</title>
+</head>
+<body>
+	<div id="app">
+        <div class="header">
+            <h1 class="logo">Controller</h1>
+            <a href="./employees.html" id="employeeTag" title="Gestion des employés" class="ui_tab"><i class="fal fa-users"></i></a>
+            <a href="./providers.html" title="Gestion des fournisseurs" class="ui_tab"><i class="fal fa-chart-network"></i></a>
+            <a href="./products.html" title="Gestion des produit" class="ui_tab"><i class="fal fa-boxes"></i></a>
+			      <a href="./sales.html" id="saleTag" title="Ventes" class="ui_tab"><i class="fal fa-inbox-out"></i></a>
+			      <a href="./clients.html" title="Clients" class="current_tab"><i class="fal fa-user-crown"></i></a>
+            <!-- <a title="Commandes" href="./commands.html" id="commandTag" class="ui_tab"><i class="fal fa-inbox-in"></i></a>
+            <a title="Vue générale" href="./overview.html" id="overviewTag" class="ui_tab"><i class="fal fa-chart-line"></i></a>
+            <a title="Règlages" href="./settings.html" class="ui_tab"><i class="fal fa-cog"></i></a> -->
+            <a title="Quitter" id="logout" class="ui_tab"><i class="fal fa-sign-out"></i></a>
+        </div>
+        <div class="employees">
+          <div class="Add_N_Search">
+              <input autocomplete="off" type="text" id="search" class="form_Text search" placeholder="Rechercher un client">
+              <button id="add" title="Ajouter une vente" class="medium_font medium_ok_btn add_employee"><i class="fal fa-plus"></i></button>
+          </div>
+          <div id="list_clnt" class="data_container">
+            <span id="emptyList" class="ui_none"></span>
+          </div>
+        </div>
+    </div>
+    <script src="../js/clients.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>
